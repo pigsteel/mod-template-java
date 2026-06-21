@@ -1,26 +1,34 @@
 modLoader = "javafml"
 loaderVersion = "[2,)"
-license = "MIT"
+license="${mod_license}"
 
 [[mods]]
-modId = "modtemplate"
-displayName = "Mod Template"
+modId = "examplemod"
+displayName = "${mod_name}"
 version = "${version}"
 displayURL = ""
 logoFile = "assets/icon.png"
-authors = "A Mod Author"
-description = '''A Mod Description'''
+authors = "cassiancc"
+description='''${mod_description}'''
 
 [[mixins]]
-config = "modtemplate.mixins.json"
+config = "examplemod.mixins.json"
 
-[[dependencies.modtemplate]]
+[[dependencies.examplemod]]
 modId = "neoforge"
 type = "required"
-versionRange = "[1,)"
+versionRange = "[21.1.181,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.modtemplate]]
+[[dependencies.examplemod]]
 modId = "minecraft"
 type = "required"
+versionRange = "${minecraft}"
+
+[[dependencies.examplemod]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft}"
+ordering="NONE"
+side="BOTH"
