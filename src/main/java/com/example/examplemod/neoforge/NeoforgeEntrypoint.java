@@ -1,7 +1,7 @@
 package com.example.examplemod.neoforge;
 
 //? neoforge {
-/*import com.example.examplemod.ExampleEventHandler; // sample_content
+import com.example.examplemod.ExampleEventHandler; // sample_content
 import com.example.examplemod.ModTemplate;
 import net.minecraft.server.level.ServerPlayer; // sample_content
 import net.neoforged.api.distmarker.Dist;
@@ -21,7 +21,7 @@ public class NeoforgeEntrypoint {
     // sample_content
     @SubscribeEvent // sample_content
     public static void onPlayerDamage(LivingDamageEvent.Post event) { // sample_content
-        if (event.getEntity() instanceof ServerPlayer player && event.getNewDamage() > 0) { // sample_content
+        if (event.getEntity() instanceof ServerPlayer player && event.getHealthDamage() > 0) { // sample_content
             ExampleEventHandler.onPlayerHurt(player); // sample_content
         } // sample_content
     } // sample_content
@@ -35,4 +35,4 @@ public class NeoforgeEntrypoint {
     }
 
 }
-*///?}
+//?}

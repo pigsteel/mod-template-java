@@ -30,6 +30,20 @@ jsonlang {
 
 repositories {
     maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = uri("https://maven.blamejared.com/")
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = uri("https://modmaven.dev")
+    }
+    maven {
+        name = "MinecraftForge"
+        url = uri("https://maven.minecraftforge.net/")
+    }
+    maven {
         name = "shedaniel (Cloth Config)"
         url = uri("https://maven.shedaniel.me/")
         content {
@@ -104,6 +118,13 @@ repositories {
         }
     }
     maven {
+        name = "Architectury"
+        url = uri("https://maven.architectury.dev/")
+        content {
+            includeGroup("dev.architectury")
+        }
+    }
+    maven {
         name = "Kotlin For Forge"
         url = uri("https://thedarkcolour.github.io/KotlinForForge/")
         content {
@@ -162,16 +183,10 @@ dependencies {
     implementation("folk.sisby:kaleido-config:${property("deps.kaleido")}")
     jarJar("folk.sisby:kaleido-config:${property("deps.kaleido")}")
 
-    // YACL  - required by McQoy
+    api("dev.architectury:architectury-neoforge:${property("deps.architectury")}")
+
     if (hasProperty("deps.yacl")) {
         runtimeOnly("dev.isxander:yet-another-config-lib:${property("deps.yacl")}-neoforge")
-    }
-    if (hasProperty("deps.mcqoy")) {
-        implementation("maven.modrinth:mcqoy:${property("deps.mcqoy")}")
-    }
-
-    if (hasProperty("deps.rrv")) {
-        implementation("cc.cassian.rrv:reliable-recipe-viewer-neoforge:${property("deps.rrv")}+${property("deps.minecraft")}")
     }
 }
 

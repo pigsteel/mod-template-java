@@ -1,7 +1,7 @@
 package com.example.examplemod.fabric;
 
 //? fabric  {
-import com.example.examplemod.ExampleEventHandler; // sample_content
+/*import com.example.examplemod.ExampleEventHandler; // sample_content
 import com.example.examplemod.ModTemplate;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents; // sample_content
@@ -21,4 +21,4 @@ public class FabricEntrypoint implements ModInitializer {
     }
 
 }
-//?}
+*///?}

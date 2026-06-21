@@ -143,18 +143,10 @@ dependencies {
     loomx.applyMojangMappings()
     implementation("net.fabricmc:fabric-loader:${property("deps.fabric-loader")}")
     implementation("net.fabricmc.fabric-api:fabric-api:${property("deps.fabric_api")}")
+    api("dev.architectury:architectury-fabric:${property("deps.architectury")}")
 
-    // Mod Menu - required by McQoy
     if (hasProperty("deps.modmenu"))
         localRuntime("com.terraformersmc:modmenu:${property("deps.modmenu")}")
-
-    // YACL - required by McQoy
-    if (hasProperty("deps.yacl")) {
-        localRuntime("dev.isxander:yet-another-config-lib:${property("deps.yacl")}-fabric")
-    }
-    if (hasProperty("deps.rrv")) {
-        implementation("cc.cassian.rrv:reliable-recipe-viewer-fabric:${property("deps.rrv")}+${property("deps.minecraft")}")
-    }
 
 }
 

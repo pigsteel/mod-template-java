@@ -1,7 +1,7 @@
 package com.example.examplemod.fabric.datagen;
 
 //? fabric  {
-import com.example.examplemod.ModTemplate;
+/*import com.example.examplemod.ModTemplate;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -42,4 +42,4 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
 }
-//?}
+*///?}

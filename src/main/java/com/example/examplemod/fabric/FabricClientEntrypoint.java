@@ -1,7 +1,7 @@
 package com.example.examplemod.fabric;
 
 //? fabric  {
-import com.example.examplemod.ModTemplate;
+/*import com.example.examplemod.ModTemplate;
 import net.fabricmc.api.ClientModInitializer;
 
 public class FabricClientEntrypoint implements ClientModInitializer {
@@ -12,4 +12,4 @@ public class FabricClientEntrypoint implements ClientModInitializer {
     }
 
 }
-//?}
+*///?}

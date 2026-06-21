@@ -1,7 +1,7 @@
 package com.example.examplemod.neoforge;
 
 //? neoforge {
-/*import com.example.examplemod.Platform;
+import com.example.examplemod.Platform;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.fml.loading.FMLPaths;
@@ -31,4 +31,4 @@ public class NeoForgePlatformImpl implements Platform {
     }
 
 }
-*///?}
+//?}
